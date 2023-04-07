@@ -1,27 +1,9 @@
-# quickscraper-python-examples
-
-# Install QuickScraper
-
+### Install Required Dependency
 ```
-python3 -m pip install quickscraper_sdk
+pip3 install quickscraper_sdk
+pip3 install requests
 ```
 
-- Create a scrapy project
-```
-scrapy startproject amazon_scraper
-```
-
-- Generate a spider
-```
-scrapy genspider amazon amazon.com
-```
-
-- Crawl spider and get response in json file
-```
-scrapy crawl amazon -O response.json
-```
-
-- Other modules
-```
-pip install lxml
-```
+#### Features
+- Amazon Scraper
+- TikTok Scraper
