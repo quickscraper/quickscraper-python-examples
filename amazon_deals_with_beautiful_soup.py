@@ -2,12 +2,10 @@ import requests
 from bs4 import BeautifulSoup
 import json
 
-access_token = 'L5vCo5nM4n13B7pI1J8fWZYNh' #access_token = Get you access token from app.quickscraper.co
+access_token = 'L5vCo54n13B7p1J8fWZYNh' #access_token = Get you access token from app.quickscraper.co
 url = f"https://api.quickscraper.co/parse?access_token={access_token}&url=https://www.amazon.com/deals" 
 response = requests.get(url)
 
-with open('amazon_deals.html', 'w', encoding='utf-8') as file:
-    file.write(response.text)
 
 soup = BeautifulSoup(response.text, 'html.parser')
 
